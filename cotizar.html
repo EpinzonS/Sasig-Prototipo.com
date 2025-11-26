@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cotización - SASIG</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header class="nav">
+        <div class="logo">SASIG</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="cotizacion.html" class="activo">COTIZACIÓN</a> 
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+
+    <section class="contacto-hero">
+        <img src="img/cotizacion.jpg" class="contacto-img" alt="Imagen de Cotización">
+    </section>
+
+    <section class="contenedor-contacto cotizacion-fondo">
+
+        <div class="formulario-contacto form-cotizacion">
+            <h3>Solicita tu Cotización</h3>
+
+            <form>
+                <div class="fila">
+                    <input type="text" placeholder="Nombres (*)">
+                    <input type="text" placeholder="Apellidos (*)">
+                </div>
+
+                <div class="fila">
+                    <input type="email" placeholder="Correo Electrónico (*)">
+                    <input type="text" placeholder="Celular (*)">
+                </div>
+
+                <div class="fila">
+                    <input type="text" placeholder="Compañía (*)">
+                    <input type="text" placeholder="Cargo (*)">
+                </div>
+                
+                <div class="fila">
+                    <select class="select-personalizado">
+                        <option value="" disabled selected>Tipo de Servicio (*)</option>
+                        <option value="alarma">Sistemas de Alarma</option>
+                        <option value="cctv">CCTV y Videovigilancia</option>
+                        <option value="acceso">Control de Acceso</option>
+                        <option value="domotica">Domótica</option>
+                    </select>
+                    <select class="select-personalizado">
+                        <option value="" disabled selected>Ciudad / Departamento (*)</option>
+                        <option value="bogota">Bogotá</option>
+                        <option value="medellin">Medellín</option>
+                        </select>
+                </div>
+
+                <textarea placeholder="Detalle de la Solicitud (*): Describa brevemente el tipo de lugar, número de cámaras, etc."></textarea>
+                
+                <div class="fila-checkbox">
+                    <input type="checkbox" id="consentimiento">
+                    <label for="consentimiento">Acepto la Política de Tratamiento de Datos.</label>
+                </div>
+                
+
+                <button class="btn-enviar">Solicitar Cotización</button>
+            </form>
+        </div>
+
+        </section>
+
+    <footer class="footer">
+        <p>© 2025 SASIG - Seguridad es la prioridad</p>
+    </footer>
+
+</body>
+</html>
