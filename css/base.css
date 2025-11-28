@@ -1,0 +1,15 @@
+/* ====== BASE ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+body { background: #fff; }
+
+/* Variables CSS  */
+:root { 
+    --espacio-x: clamp(16px, 4vw, 40px); 
+    --espacio-y: clamp(14px, 3vw, 20px); 
+    --fs-base: clamp(14px, 1.8vw, 16px); 
+    --fs-h1: clamp(24px, 4vw, 36px); 
+    --color-principal: #c58b1b; /*  colores recurrentes */
+    --color-secundario: #d49c00;
+}
+img { max-width: 100%; height: auto; }
+body { font-size: var(--fs-base); line-height: 1.45; }

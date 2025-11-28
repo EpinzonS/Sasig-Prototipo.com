@@ -1,0 +1,91 @@
+
+/* ===== Distribución ===== */
+.nosotros-hero {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background: linear-gradient(180deg, #fdfdfd 0%, #f7f7f7 100%);
+}
+.nosotros-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.nosotros-right {
+    flex: 2;
+}
+
+/* ===== Animación para la imagen ===== */
+.foto-frame img {
+    width: 100%;
+    border-radius: 8px;
+    opacity: 0;
+    transform: scale(1.05);
+    animation: fadeInImage 1.2s ease forwards;
+}
+
+/* ===== Animación para el título y texto ===== */
+.seccion-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #c57f2a;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s ease forwards;
+}
+.introduccion {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+/* ===== Animación para tarjetas ===== */
+.tarjetas-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.tarjeta {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInCards 1s ease forwards;
+}
+.tarjeta:nth-child(1) { animation-delay: 0.4s; }
+.tarjeta:nth-child(2) { animation-delay: 0.7s; }
+.tarjeta:nth-child(3) { animation-delay: 1s; }
+
+/* ===== Hover en tarjetas ===== */
+.tarjeta:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInImage {
+    0% { opacity: 0; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInCards {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

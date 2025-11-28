@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - SASIG</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/Aservicios.css">
 </head>
 
 <body>
 
-    <!-- ==================== NAV ==================== -->
+    <!-- ==================== NAVEGACION ==================== -->
     <header class="navbar">
         <div class="logo">SASIG <span>SEGURIDAD ES LA PRIORIDAD</span></div>
-        <nav>
+
+          <!-- Botón hamburguesa -->
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+    <!-- Menú -->
+    <nav class="nav-menu" id="nav-menu">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a class="active" href="servicios.html">SERVICIOS</a></li>
@@ -22,74 +33,72 @@
         </nav>
     </header>
 
-    <!-- ==================== HERO SERVICIOS ==================== -->
-    <section class="servicios-hero">
-        <h1>LA MEJOR OPCIÓN PARA CUIDAR LA SALUD E<br>INTEGRIDAD DE TUS EMPLEADOS</h1>
-    </section>
-
     <!-- ==================== CONTENIDO ==================== -->
-    <section class="servicios-grid">
+  <section class="servicios-hero">
+    <h1>LIDERAMOS LA SEGURIDAD INDUSTRIAL.<br>PROTECCIÓN Y CUMPLIMIENTO GARANTIZADOS.</h1>
+    <h2>Soluciones integrales que cuidan la salud e integridad de tus empleados y tu inversión.</h2>
+</section>
 
-        <!-- CARD 1 -->
-        <div class="serv-card">
-            <img src="img/personal.JPG" alt="">
-            <h3>SUMINISTRO DE PERSONAL ESPECIALIZADO</h3>
-            <p>
-                Garantizamos inspectores expertos en seguridad industrial para contratistas, asegurando 
-                cumplimiento normativo, reducción de riesgos y protección de la productividad.
-            </p>
-            <button class="btn-serv">Mayor Info</button>
-        </div>
+<section class="servicios-grid">
 
-        <!-- CARD 2 -->
-        <div class="serv-card">
-            <img src="img/Gestion.JPG" alt="">
-            <h3>SISTEMAS DE GESTIÓN DE SEGURIDAD</h3>
-            <p>
-                Con nuestro servicio, tu empresa evita sanciones y gana tranquilidad.
-            </p>
-            <button class="btn-serv">Mayor Info</button>
-        </div>
+    <div class="serv-card">
+        <img src="img/personal.JPG" alt="Personal especializado en seguridad industrial">
+        <h3>TALENTO HSEQ DE ALTO NIVEL</h3>
+        <p>
+            **Inspectores, Coordinadores y Supervisores** expertos a tu disposición. Garantizamos **cumplimiento normativo inmediato**, reducción de riesgos en obra y protección de la productividad de tus contratistas. **¡El recurso humano que tu proyecto necesita!**
+        </p>
+        <button class="btn-serv">Ver Perfiles y Contratar</button>
+    </div>
 
-        <!-- CARD 3: nuestro trabajo -->
-        <div class="serv-side">
-            <h4>NUESTRO TRABAJO</h4>
-            <img src="img/nuestro.JPG" alt="">
-        </div>
+    <div class="serv-card">
+        <img src="img/Gestion.JPG" alt="Implementación de Sistemas de Gestión de Seguridad">
+        <h3>SISTEMAS DE GESTIÓN (SG-SST)</h3>
+        <p>
+            **Tranquilidad total para tu empresa.** Diseñamos, implementamos y auditamos tu Sistema de Gestión de Seguridad y Salud en el Trabajo. Evita **sanciones**, optimiza procesos y asegura la **certificación** bajo la legislación vigente.
+        </p>
+        <button class="btn-serv">Auditoría y Asesoría</button>
+    </div>
 
-        <!-- CARD 4 -->
-        <div class="serv-card">
-            <img src="img/examenes.JPG" alt="">
-            <h3>EXÁMENES OCUPACIONALES</h3>
-            <p>
-                Aseguramos cumplimiento normativo, reducción de riesgos y protección de la productividad.
-            </p>
-            <button class="btn-serv">Mayor Info</button>
-        </div>
+    <div class="serv-side">
+        <h4>🤝 COMPROMISO Y RESULTADOS</h4>
+        <p>
+            **Más que un servicio, una alianza.** Nuestro trabajo se basa en la **prevención activa** y la implementación de soluciones que tienen un impacto directo en la seguridad y rentabilidad de tu operación.
+        </p>
+        <img src="img/nuestro.JPG" alt="Equipo de trabajo profesional en sitio">
+    </div>
 
-        <!-- CARD 5 -->
-        <div class="serv-card">
-            <img src="img/capacitaciones.JPG" alt="">
-            <h3>CAPACITACIONES</h3>
-            <p>
-                Con nuestro servicio, tu empresa evita sanciones y mejora su productividad.
-            </p>
-            <button class="btn-serv">Mayor Info</button>
-        </div>
+    <div class="serv-card">
+        <img src="img/examenes.JPG" alt="Toma de exámenes médicos ocupacionales">
+        <h3>EXÁMENES OCUPACIONALES</h3>
+        <p>
+            Servicios integrales de salud laboral: **Preocupacionales, Periódicos y de Retiro.** Evaluaciones médicas y paraclínicas con calidad. Asegura la idoneidad de tus trabajadores y protege la salud de tu fuerza laboral.
+        </p>
+        <button class="btn-serv">Agenda tu Cita</button>
+    </div>
 
-        <!-- CARD 6: gracias -->
-        <div class="serv-side">
-            <h4>GRACIAS POR CONFIAR EN NOSOTROS</h4>
-            <img src="img/confiar.JPG" alt="">
-        </div>
+    <div class="serv-card">
+        <img src="img/capacitaciones.JPG" alt="Clase de capacitación en seguridad industrial">
+        <h3>FORMACIÓN Y ENTRENAMIENTO</h3>
+        <p>
+            Creamos una **cultura de seguridad** proactiva. Cursos y talleres certificados en alturas, espacios confinados, brigadas de emergencia y más. **¡Invierte en el conocimiento, reduce los accidentes y mejora la productividad!**
+        </p>
+        <button class="btn-serv">Ver Catálogo de Cursos</button>
+    </div>
 
-    </section>
+    <div class="serv-side">
+        <h4>🏆 LÍDERES EN SEGURIDAD INDUSTRIAL</h4>
+        <p>
+            **Gracias por confiar en nuestra experiencia.** Miles de horas de trabajo y un equipo de expertos respaldan nuestra promesa de mantener tus proyectos seguros y dentro de la norma.
+        </p>
+        <img src="img/confiar.JPG" alt="Foto de equipo de seguridad industrial dando la mano">
+    </div>
 
+</section>
     <!-- FOOTER -->
     <footer class="footer">
         <p>Corporación Universitaria Iberoamericana</p>
         <p>2025</p>
     </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>

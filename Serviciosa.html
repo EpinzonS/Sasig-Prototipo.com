@@ -2,19 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Servicios Activos - SASIG</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad Industrial</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
 
-    <header class="nav">
-        <div class="logo">SASIG</div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="servicios.html">SERVICIOS</a>
-            <a href="nosotros.html">NOSOTROS</a>
-            <a href="contacto.html">CONTACTO</a>
+    <!-- ==================== NAVEGACION ==================== -->
+    <header class="navbar">
+        <div class="logo">SASIG <span>SEGURIDAD ES LA PRIORIDAD</span></div>
+
+ <!-- Botón hamburguesa -->
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+    <!-- Menú -->
+    <nav class="nav-menu" id="nav-menu">
+
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -27,6 +41,9 @@
                 <p class="rol">Rescatista</p>
             </div>
         </div>
+
+ <!-- ==================== MENU SECUNDARIO ==================== -->
+
         <nav class="nav-secundaria">
             <a href="clientes.html">SOLICITAR PERSONAL</a>
             <a href="documentacion.html">DOCUMENTACION</a>
@@ -34,6 +51,8 @@
             <a href="Perfil.html">PERFIL</a>
         </nav>
     </section>
+
+ <!-- ==================== TABLERO DE CONTROL SERVICIOS ==================== -->
 
     <main class="contenedor-servicios-activos">
         
@@ -234,6 +253,6 @@
         <p>Corporación Universitaria Iberoamericana</p>
         <p>Eder Steelt pinzon 2025</p>
     </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>

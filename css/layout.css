@@ -1,0 +1,23 @@
+/* Estilo base del menú */
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hamburguesa oculta en escritorio */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ==================== NAVBAR GENERAL ==================== */
+.navbar, .nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 40px; background: #fff; border-bottom: 1px solid #ddd; }
+.logo { font-weight: bold; font-size: 20px; }
+.logo span { display: block; font-size: 11px; color: #d49c00; margin-top: -5px; }
+nav ul, nav ul li, .nav nav { display: flex; align-items: center; gap: 20px; }
+nav ul li a, .nav a { text-decoration: none; padding: 8px 18px; border-radius: 20px; color: #000; font-weight: bold; transition: .3s; border: 1px solid #d49c00; }
+nav ul li a.active, .nav a:hover, .nav a.activo { background: #f2b544; color: #fff; }
+
+/* ==================== FOOTER ==================== */
+.footer { text-align: center; padding: 20px; background: #c5a23f; color: white; margin-top: 40px; }

@@ -2,20 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Cotización - SASIG</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad Industrial</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
 
-    <header class="nav">
-        <div class="logo">SASIG</div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="servicios.html">SERVICIOS</a>
-            <a href="nosotros.html">NOSOTROS</a>
-            <a href="cotizacion.html" class="activo">COTIZACIÓN</a> 
-            <a href="contacto.html">CONTACTO</a>
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="navbar">
+        <div class="logo">SASIG <span>SEGURIDAD ES LA PRIORIDAD</span></div>
+
+ <!-- Botón hamburguesa -->
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+    <!-- Menú -->
+    <nav class="nav-menu" id="nav-menu">
+
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -76,6 +89,6 @@
     <footer class="footer">
         <p>© 2025 SASIG - Seguridad es la prioridad</p>
     </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>

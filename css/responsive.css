@@ -1,0 +1,81 @@
+/* ==================== RESPONSIVE DE LAYOUT (Menú Hamburguesa) ==================== */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Oculto por defecto */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 12px;
+        z-index: 999;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-menu.show {
+        display: block; /* Mostrar cuando JS añade .show */
+    }
+
+    .hamburger {
+        display: block; /* Mostrar icono en móviles */
+    }
+}
+
+/* ==================== MEDIA QUERIES DE AJUSTE (Responsivo sin perder estilos) ==================== */
+/* Navbar */
+@media (max-width: 1024px) { .navbar, .nav { padding: 14px var(--espacio-x); flex-wrap: wrap; gap: 10px; } nav ul { flex-wrap: wrap; } }
+@media (max-width: 640px) { .logo { font-size: 18px; } nav ul { width: 100%; justify-content: center; } nav ul li a, .nav a { padding: 8px 14px; } }
+
+/* Hero */
+@media (max-width: 1024px) { .hero { padding: 30px var(--espacio-x); } .hero-text h1 { font-size: var(--fs-h1); } }
+@media (max-width: 860px) { .hero { flex-direction: column; text-align: center; } .hero-text { margin-left: 0; width: 100%; max-width: 720px; } .hero-img img { width: min(100%, 360px); margin: 0 auto; display: block; } .botones { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; } .btn { padding: 10px 22px; } }
+
+/* Servicios (cards) */
+@media (max-width: 980px) { .servicios { padding: 30px var(--espacio-x); gap: 16px; } .card { width: 45%; } }
+@media (max-width: 640px) { .servicios { flex-direction: column; align-items: center; } .card { width: 100%; max-width: 520px; } }
+
+/* Contacto */
+@media (max-width: 980px) { .contenedor-contacto { padding: 30px var(--espacio-x); gap: 20px; } .info-contacto { width: 40%; } .formulario-contacto { width: 56%; } }
+@media (max-width: 720px) { .contenedor-contacto { flex-direction: column; } .info-contacto, .formulario-contacto { width: 100%; } .fila { flex-direction: column; } .fila input, .select-personalizado { width: 100%; } }
+
+/* Nosotros refinamiento */
+@media (min-width: 901px) and (max-width: 1180px) { .nosotros-hero { padding: 24px var(--espacio-x); } .foto-frame { height: 360px; max-width: 360px; } }
+
+/* Servicios hero */
+@media (max-width: 860px) { .servicios-hero { padding: 30px var(--espacio-x); } .servicios-hero h1 { font-size: clamp(24px, 4.5vw, 32px); } }
+
+/* Grid de servicios */
+@media (max-width: 1080px) { .servicios-grid { grid-template-columns: repeat(2,1fr); padding: 30px var(--espacio-x); gap: 26px; } }
+@media (max-width: 640px) { .servicios-grid { grid-template-columns: 1fr; padding: 24px var(--espacio-x); gap: 20px; } }
+
+/* Clientes / Perfiles */
+@media (max-width: 980px) { .cliente-header { padding: 16px var(--espacio-x); } }
+@media (max-width: 860px) { .contenedor-perfiles { flex-direction: column; gap: 24px; padding: 24px var(--espacio-x); } .columna-perfiles { width: 100%; } .tarjeta-perfil { flex-direction: column; align-items: center; text-align: center; } .tarjeta-perfil img { margin-right: 0; margin-bottom: 12px; } }
+
+/* Documentación */
+@media (max-width: 980px) { .contenedor-documentacion { padding: 24px var(--espacio-x); gap: 18px; } }
+@media (max-width: 780px) { .contenedor-documentacion { flex-direction: column; } .menu-lateral { width: 100%; display: flex; gap: 10px; border-right: none; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-right: 0; } .lista-documentos { gap: 18px; } .tarjeta-documento { flex-direction: column; align-items: center; text-align: center; } .acciones-documento { margin-top: 12px; } }
+
+/* Tabla Servicios Activos */
+@media (max-width: 980px) { .contenedor-servicios-activos { padding: 24px var(--espacio-x); } .controles-tabla { flex-wrap: wrap; } }
+@media (max-width: 640px) { .tabla-servicios th, .tabla-servicios td { padding: 10px 8px; } .icono-gestion { width: 36px; height: 36px; } }
+
+/* Footer */
+@media (max-width: 640px) { .footer { padding: 16px; } }
+/* Ajustes responsivos de la barra secundaria */
+@media (max-width: 768px) {
+    .nav-secundaria {
+        justify-content: flex-start; /* Alinea a la izquierda en móviles */
+        padding: 10px var(--espacio-x);
+    }
+    .nav-secundaria a {
+        flex: 1 1 auto;              /* Que los botones se adapten al ancho */
+        text-align: center;
+    }
+}

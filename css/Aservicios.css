@@ -1,0 +1,69 @@
+
+/* ===== Animaciones para la sección ===== */
+.servicios-hero h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeInDown 1s ease forwards;
+    opacity: 0;
+}
+.servicios-hero h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+}
+
+/* ===== Animaciones para las tarjetas ===== */
+.servicios-grid .serv-card,
+.servicios-grid .serv-side {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInCards 1s ease forwards;
+}
+.servicios-grid .serv-card:nth-child(1) { animation-delay: 0.3s; }
+.servicios-grid .serv-card:nth-child(2) { animation-delay: 0.6s; }
+.servicios-grid .serv-side:nth-child(3) { animation-delay: 0.9s; }
+.servicios-grid .serv-card:nth-child(4) { animation-delay: 1.2s; }
+.servicios-grid .serv-card:nth-child(5) { animation-delay: 1.5s; }
+.servicios-grid .serv-side:nth-child(6) { animation-delay: 1.8s; }
+
+/* ===== Hover en imágenes y botones ===== */
+.serv-card img, .serv-side img {
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.4s ease;
+}
+.serv-card:hover img, .serv-side:hover img {
+    transform: scale(1.05);
+}
+.btn-serv {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #c58b1b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-serv:hover {
+    background-color: #a67816;
+    transform: scale(1.05);
+}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInCards {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

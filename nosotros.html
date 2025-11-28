@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nosotros - SASIG</title>
-  <link rel="stylesheet" href="css/estilo.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad Industrial</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/Anosotros.css">
 </head>
 <body>
 
-  <!-- NAV (usa la misma clase que en index.html) -->
-  <header class="navbar">
-    <div class="logo">SASIG <span>SEGURIDAD ES LA PRIORIDAD</span></div>
+    <!-- ==================== NAVEGACION ==================== -->
+    <header class="navbar">
+        <div class="logo">SASIG <span>SEGURIDAD ES LA PRIORIDAD</span></div>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="servicios.html">SERVICIOS</a></li>
-        <li><a class="active" href="nosotros.html">NOSOTROS</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
-      </ul>
-    </nav>
-  </header>
+ <!-- Botón hamburguesa -->
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
 
-  <!-- HERO / BANNER -->
-  <section class="nosotros-hero">
+    <!-- Menú -->
+    <nav class="nav-menu" id="nav-menu">
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a class="active" href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- ==================== NOSOTROS ==================== -->
+
+<section class="nosotros-hero">
     <div class="nosotros-left">
-      <div class="foto-frame">
-        <img src="img/nosotros.jpg" alt="Trabajadora SASIG">
-      </div>
+        <div class="foto-frame">
+            <img src="img/nosotros.jpg" alt="Trabajadora de seguridad industrial inspeccionando en sitio">
+        </div>
     </div>
 
     <div class="nosotros-right">
-      <h2 class="seccion-titulo">SOBRE NOSOTROS</h2>
-      <p class="introduccion">
-        Garantizamos inspectores expertos en seguridad industrial para contratistas, asegurando cumplimiento normativo,
-        reducción de riesgos y protección de la productividad. Con nuestro servicio, su empresa evita sanciones y gana
-        tranquilidad. Brindamos soluciones integrales orientadas a la prevención y al control de riesgos laborales.
-      </p>
+        <h2 class="seccion-titulo">CONOCE NUESTRA EMPRESA</h2>
 
-      <!-- TARJETAS: MISION / VISION / COMPROMISO -->
-      <div class="tarjetas-wrap">
-        <div class="tarjeta tarjeta-mision">
-          <h4>MISIÓN</h4>
-          <p>Garantizamos inspectores expertos en seguridad industrial para contratistas, asegurando cumplimiento normativo y protección de la productividad.</p>
-        </div>
+        <p class="introduccion">
+            Somos una **Compañía de Servicios en Seguridad Industrial** especializada en transformar los entornos de trabajo en espacios seguros y productivos. Ofrecemos soluciones integrales orientadas a la **prevención, el control de riesgos laborales** y el estricto **cumplimiento normativo**. Nuestro propósito es proteger lo más valioso de su empresa: su gente.
+        </p>
 
-        <div class="tarjeta tarjeta-vision">
-          <h4>VISIÓN</h4>
-          <p>Ser líderes en servicios de seguridad industrial, reconocidos por la calidad, la ética profesional y la innovación en prevención de riesgos.</p>
-        </div>
+        <div class="tarjetas-wrap">
+            <div class="tarjeta tarjeta-mision">
+                <h4>🎯 NUESTRA MISIÓN</h4>
+                <p>
+                    Ofrecer servicios de alta calidad que **garanticen la integridad física** de los colaboradores y el cumplimiento legal de nuestros clientes. Buscamos ser un **socio estratégico** en la gestión de la seguridad industrial.
+                </p>
+            </div>
 
-        <div class="tarjeta tarjeta-compromiso">
-          <h4>COMPROMISO</h4>
-          <p>Mantenemos un compromiso con la mejora continua, la formación de nuestro personal y la entrega de soluciones seguras y confiables.</p>
+            <div class="tarjeta tarjeta-vision">
+                <h4>🚀 NUESTRA VISIÓN</h4>
+                <p>
+                    Ser reconocidos como la compañía **líder e innovadora** en soluciones de seguridad industrial a nivel nacional. Destacando por la **ética profesional, la excelencia** en el servicio y la contribución a una cultura de cero accidentes.
+                </p>
+            </div>
+
+            <div class="tarjeta tarjeta-compromiso">
+                <h4>🤝 VALORES CLAVE</h4>
+                <p>
+                    Mantenemos un **compromiso inquebrantable** con la **Integridad, la Calidad y la Formación Continua**. Esto nos permite entregar soluciones **seguras, confiables y a la vanguardia** de las necesidades de la industria.
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
   <!-- PIE -->
   <footer class="footer">
     <p>Corporación Universitaria Iberoamericana</p>
     <p>2025</p>
   </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
